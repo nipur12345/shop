@@ -1,0 +1,11 @@
+{% extends 'shop/index.html' %}
+
+
+{% block titles%} clearCARt{% endblock %}
+{% block body%} This is our clear cart page
+<div class='conatiner'>
+    localStorage.clear();
+    cart = {};
+    updateCart(cart);
+</div>
+{% endblock %}
